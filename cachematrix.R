@@ -47,7 +47,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## calculated, then the inverse matrix is returned directly from x as
 ## no recalc is required.
 cacheSolve <- function(x, ...) {
-    ## Get the inverse of X from the provided cache
+	## Get the inverse of X from the provided cache
 	inv <- x$getinverse()
 	
 	if (!is.null(inv)) {
